@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
+  "title": "Castle Conquest",
+  "description": "Grow armies in your castles and march them across voxel kingdoms to capture every enemy fortress in this free strategy game in your browser.",
+  "about": "Castle Conquest is a minimalist real-time strategy game played on colourful voxel landscapes. Every castle you own trains new troops each second, and you decide where they march: strike a weak neutral fort, reinforce your front line or throw everything at an enemy stronghold.\n\nThe fun is in timing and economy. Attacking sends half of a castle's garrison, so overreaching leaves you exposed, while spending troops to upgrade a castle makes it produce faster and hold more. Rival kingdoms expand and fight each other too, so battles across snowfields, deserts and green hills shift quickly, and endless random maps wait after the handcrafted levels.\n\nOriginally created by mefistofel for js13kGames 2023 as Castle Wars.",
+  "howToPlay": "Capture every enemy castle (red, green or yellow) to win the level; lose all of your blue castles and the battle is over. Select one of your castles, then pick another castle to send half of its troops there, marching through nearby castles you own. Troops that reach an enemy or neutral castle reduce its garrison and capture it when it reaches zero. When a castle shows a ▲ it has enough troops to be upgraded, which makes it produce more troops.",
+  "controls": [
+    { "input": "Click / Tap", "action": "Select your castle, then pick a target to attack" },
+    { "input": "Drag", "action": "Drag from your castle to any castle to send troops (also to reinforce your own)" },
+    { "input": "Click / Tap selected castle", "action": "Upgrade it when it shows ▲ (right-click also works)" },
+    { "input": "Right click", "action": "Send troops from the selected castle (original controls)" },
+    { "input": "Esc / Back button", "action": "Go back to the previous menu" }
+  ],
+  "tips": [
+    "Grab nearby grey neutral castles early: they cost only a few troops and immediately add to your production.",
+    "Upgrade your home castle as soon as it shows ▲, because a bigger castle trains up to three troops per second.",
+    "Wait until an enemy castle has just sent out an attack before striking it, since its garrison is at its weakest.",
+    "Drag troops from safe castles in the rear to the front line so your attacks are big enough to break through."
+  ],
+  "faq": [
+    { "question": "Is Castle Conquest free to play?", "answer": "Yes, it is completely free and runs in your browser with no download or sign-up." },
+    { "question": "Can I play Castle Conquest on a phone or tablet?", "answer": "Yes, tap to select and attack or drag between castles; the map fits any screen, though castles look larger in landscape or on a tablet." },
+    { "question": "What happens after the last level?", "answer": "After the tutorial and four handcrafted levels the game keeps generating new random maps with two to four kingdoms, so you can keep conquering forever." }
+  ],
+  "category": "Strategy",
+  "tags": ["strategy", "real-time strategy", "castles", "conquest", "voxel", "minimalist"],
+  "author": "mefistofel",
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "screenshots": ["screenshots/1.png", "screenshots/2.png", "screenshots/3.png"],
+  "added": "2026-10-01",
+  "draft": false
+}

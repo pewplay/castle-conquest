@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Castle Conquest</title>
+	<!-- Castle Conquest - based on "Castle Wars" by mefistofel (js13kGames 2023), MIT License -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<canvas id="game" aria-label="Battlefield"></canvas>
+
+	<div id="ui">
+		<section id="menu" class="screen">
+			<header class="top">
+				<h1>Castle<br>Conquest</h1>
+				<p class="subtitle">Raise your army. Take every castle.</p>
+			</header>
+			<div class="bottom">
+				<button class="btn primary" data-action="play">Play</button>
+				<p class="keys">Space to start</p>
+			</div>
+		</section>
+
+		<section id="levels" class="screen" hidden>
+			<header class="top">
+				<p id="level-number" class="eyebrow"></p>
+				<h2 id="level-title"></h2>
+			</header>
+			<div class="bottom">
+				<div class="row">
+					<button id="prev-level" class="btn icon" data-action="prev" aria-label="Previous level">&#8249;</button>
+					<button class="btn primary" data-action="start">Start</button>
+					<button class="btn icon" data-action="next-level" aria-label="Next level">&#8250;</button>
+				</div>
+				<button class="btn small" data-action="back">Back</button>
+				<p class="keys">&larr; &rarr; choose &middot; Space start &middot; Esc back</p>
+			</div>
+		</section>
+
+		<section id="result" class="screen" hidden>
+			<header class="top">
+				<h2 id="result-title"></h2>
+				<p id="result-text" class="subtitle"></p>
+			</header>
+			<div class="bottom">
+				<button id="result-main" class="btn primary" data-action="next">Next level</button>
+				<button class="btn small" data-action="menu">Menu</button>
+			</div>
+		</section>
+
+		<div id="hud" hidden>
+			<button class="btn hud-back" data-action="quit" aria-label="Back to level select">&#8249; Back</button>
+			<p id="hud-level"></p>
+			<p id="hint" hidden></p>
+		</div>
+	</div>
+
+	<script src="js/geometry.js"></script>
+	<script src="js/objects3d.js"></script>
+	<script src="js/noise.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/castle.js"></script>
+	<script src="js/unit.js"></script>
+	<script src="js/enemy.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
